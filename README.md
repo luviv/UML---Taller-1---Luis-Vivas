@@ -83,7 +83,55 @@ Se encarga de todos los eventos del teclado que tengan que ver con la acción de 
 -------------------------------------------------------------------------------------------------------------------
 
 ## Clase Estrellas
+Esta clase crea objetos que representan estrellas en el lienzo y aparecen en la parte superior del mismo.
 
+### Variables
+- **x**
+Es un int que representa una posición en el eje x del lienzo.
+
+- **y**
+Es un int que representa una posición en el eje y del lienzo.
+
+- **tam**
+Es un int que representa el tamaño del circulo que representara la estrella.
+
+### Metodos
+- **pintar()**
+Se encarga de hacer aparecer el objetos de tipo Estrellas en el lienzo.
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Clase Rayo
+Esta clase crea un objeto que representa un rayo en el lienzo despues de que el usuario haya presionado el click
+durante 5 segundos.
+
+### Variables
+- **x1**
+Es un int que representa una posición en el eje x del lienzo y se usa en uno de los quad() que forma el relampago.
+
+- **y1**
+Es un int que representa una posición en el eje y del lienzo y se usa en uno de los quad() que forma el relampago.
+
+- **x2**
+Es un int que representa una posición en el eje x del lienzo y se usa en uno de los quad() que forma el relampago.
+
+- **y2**
+Es un int que representa una posición en el eje y del lienzo y se usa en uno de los quad() que forma el relampago.
+
+- **xTri**
+Es un int que representa una posición en el eje x del lienzo y se usa en un triangle() que forma el relampago.
+
+- **yTri**
+Es un int que representa una posición en el eje y del lienzo y se usa en un triangle() que forma el relampago.
+
+### Metodos
+- **pintarRayo()**
+Se encarga de hacer aparecer el objeto de tipo Rayo en el lienzo.
+
+- **presMouseRayo()**
+Se encarga del evento del mouse en el que el usuario debera mantener presionado el click.
+
+-------------------------------------------------------------------------------------------------------------------
 
 
 
