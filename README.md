@@ -34,7 +34,19 @@ Se llama a la función cada vez que se mueve el mouse y no se presiona el botón d
 La función se llama una vez cada vez que se presiona una tecla. La tecla presionada se almacena en la 
 variable clave.
 
+-------------------------------------------------------------------------------------------------------------------
+
 ## Clase Logica
+Es la clase encargada de instanciar, llamar y operar las demás clases en las que se crearan objetos.
+
+### Variables:
+- **app**
+Instancia de la libreria PApplet de Processing.
+
+- **texto**
+Es un String que va a contener el texto escogido 
+
+
 
 
   
