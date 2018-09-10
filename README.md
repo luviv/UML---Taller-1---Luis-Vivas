@@ -138,37 +138,37 @@ Esta clase crea un objeto que representa a Cthulhu en el lienzo despues de que e
 usando el teclado.
 
 ### Variables:
--**xCir**
+- **xCir**
 Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma a Cthulhu.
 
--**yCir**
+- **yCir**
 Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma a Cthulhu.
 
 - **tam**
 Es un int que representa el tamaño del circulo que será la cabeza de Cthulhu.
 
--**xArc**
+- **xArc**
 Es un int que representa una posición en el eje x del lienzo y se usa en un arc() que forma a Cthulhu.
 
--**yArc**
+- **yArc**
 Es un int que representa una posición en el eje y del lienzo y se usa en un arc() que forma a Cthulhu.
 
--**cArc**
+- **cArc**
 Es un int que representa el ancho del arco y se usa en un arc() que forma a Cthulhu.
 
--**dArc**
+- **dArc**
 Es un int que representa la altura del arco y se usa en un arc() que forma a Cthulhu.
 
--**xRect**
+- **xRect**
 Es un int que representa una posición en el eje x del lienzo y se usa en un rect() que forma a Cthulhu.
 
--**yRect**
+- **yRect**
 Es un int que representa una posición en el eje y del lienzo y se usa en un rect() que forma a Cthulhu.
 
--**letras[]**
+- **letras[]**
 Es un arreglo de char que contiene las letras que forman la palabra "Cthulhu".
 
--**valTecla**
+- **valTecla**
 Almacena un boolean que se usa en el metodo validarTecla(char).
 
 ### Metodos:
@@ -186,7 +186,98 @@ Retorna el char presionado por el usuario para que el programa lo valide.
 
 -------------------------------------------------------------------------------------------------------------------
 
+## Clase Tentaculo
+Esta clase crea un objeto que representa a un tentaculo de Cthulhu en el lienzo despues de que el usuario haya 
+pasado el mouse por cierta zona del lienzo.
 
+### Variables:
+- **xCir**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma una roca.
 
+- **yCir**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma una roca.
 
-  
+- **xCirT**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **yCirT**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **tam**
+Es un int que representa el tamaño del circulo que representara una roca.
+
+- **tamT**
+Es un int que representa el tamaño del circulo que representara una ventosa del tentaculo de Cthulhu.
+
+- **xTrian**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **yTrian**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **xQuad**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **yQuad**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma al tentaculo 
+de Cthulhu.
+
+- **validarMouse**
+Es un boolean que sirve para el metodo pasarMouse().
+
+### Metodos:
+- **pintarRocas()**
+Se encarga de hacer aparecer un objeto que representa unas rocas en el lienzo.
+
+- **pintarTentaculo()**
+Se encarga de hacer aparecer un objeto que representa un tentaculo de Cthulhu.
+
+- **pasarMouse()**
+Se encargan de validar para que el tentaculo pueda pintarse cuando el usuario pase el mouse sobre las rocas.
+
+-------------------------------------------------------------------------------------------------------------------
+
+### Clase Burbujas
+Esta clase crea un objeto que representa a unas burbujas y aparecen despues de que el usuario haya dado click a una
+caverna que esta en la mitad del lienzo.
+
+### Variables:
+- **x1**
+Es un int que representa una posición en el eje x del lienzo y se usa en uno de los ellipse() que forma 
+la burbuja.
+
+- **y1**
+Es un int que representa una posición en el eje y del lienzo y se usa en uno de los ellipse() que forma 
+la burbuja.
+
+- **x2**
+Es un int que representa una posición en el eje x del lienzo y se usa en uno de los ellipse() que forma 
+la burbuja.
+
+- **x2**
+Es un int que representa una posición en el eje y del lienzo y se usa en uno de los ellipse() que forma 
+la burbuja.
+
+- **tam1**
+Es un int que representa el tamaño de uno de los circulos que representara una burbuja.
+
+- **tam2**
+Es un int que representa el tamaño de uno de los circulos que representara una burbuja.
+
+- **validarMouse**
+Es un boolean que sirve para validar el metodo click().
+
+### Metodos:
+- **pintarBurbuja()**
+Se encarga de hacer aparecer un objeto que representa una burbuja.
+
+- **click()**
+Se encarga de validar cuando el usuario haga click y asi permita pintar las burbujas.
+
+-------------------------------------------------------------------------------------------------------------------
+
