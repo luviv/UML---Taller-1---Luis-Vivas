@@ -44,7 +44,48 @@ Es la clase encargada de instanciar, llamar y operar las demás clases en las que
 Instancia de la libreria PApplet de Processing.
 
 - **texto**
-Es un String que va a contener el texto escogido 
+Es un String que va a contener el texto de donde se desprenderan las interacciones.
+
+- **estrellas**
+Un ArrayList de objetos de la clase Estrellas.
+
+- **burbujas**
+Un ArrayList de objetos de la clase Burbujas.
+
+- **esferas**
+Un ArrayList de objetos de la clase Esferas.
+
+### Metodos:
+- **getFrase(String)**
+Esta función contiene al texto y lo analiza para desprender las interacciones.
+
+- **pintar()**
+Muestra todos los elementos en el lienzo.
+
+- **arrastrar()**
+Se encarga de todos los eventos del mouse que tengan que ver con la acción de arrastrar.
+
+- **soltar()**
+Se encarga de todos los eventos del mouse que tengan que ver con la acción de soltar despues de presionar click.
+
+- **click()**
+Se encarga de todos los eventos del mouse que tengan que ver con la acción de hacer click.
+
+- **clickPresionado**
+Se encarga de todos los eventos del mouse que tengan que ver con la acción de mantener presionado el click.
+
+- **pasarMouse**
+Se encarga de todos los eventos del mouse que tengan que ver con la acción de pasar el mouse en cierta area.
+
+- **presionarTecla**
+Se encarga de todos los eventos del teclado que tengan que ver con la acción de apresionar una tecla.
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Clase Estrellas
+
+
+
 
 
 
