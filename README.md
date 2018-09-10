@@ -212,19 +212,19 @@ Es un int que representa el tamaño del circulo que representara una roca.
 Es un int que representa el tamaño del circulo que representara una ventosa del tentaculo de Cthulhu.
 
 - **xTrian**
-Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma al tentaculo 
+Es un int que representa una posición en el eje x del lienzo y se usa en un triangle() que forma al tentaculo 
 de Cthulhu.
 
 - **yTrian**
-Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma al tentaculo 
+Es un int que representa una posición en el eje y del lienzo y se usa en un triangle() que forma al tentaculo 
 de Cthulhu.
 
 - **xQuad**
-Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma al tentaculo 
+Es un int que representa una posición en el eje x del lienzo y se usa en un quad() que forma al tentaculo 
 de Cthulhu.
 
 - **yQuad**
-Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma al tentaculo 
+Es un int que representa una posición en el eje y del lienzo y se usa en un quad() que forma al tentaculo 
 de Cthulhu.
 
 - **validarMouse**
@@ -242,7 +242,7 @@ Se encargan de validar para que el tentaculo pueda pintarse cuando el usuario pa
 
 -------------------------------------------------------------------------------------------------------------------
 
-### Clase Burbujas
+## Clase Burbujas
 Esta clase crea un objeto que representa a unas burbujas y aparecen despues de que el usuario haya dado click a una
 caverna que esta en la mitad del lienzo.
 
@@ -281,3 +281,82 @@ Se encarga de validar cuando el usuario haga click y asi permita pintar las burb
 
 -------------------------------------------------------------------------------------------------------------------
 
+## Clase Vigilant
+Esta clase crea un objeto que representa al barco Vigilant el cual el usuario podra arrastrarlo hacia una posición
+marcada en el lienzo.
+
+### Variables:
+- **xQuad**
+Es un int que representa una posición en el eje x del lienzo y se usa en un quad() que forma al barco.
+
+- **yQuad**
+Es un int que representa una posición en el eje y del lienzo y se usa en un quad() que forma al barco.
+
+- **xTrian**
+Es un int que representa una posición en el eje x del lienzo y se usa en un triangle() que forma al barco.
+
+- **xTrian**
+Es un int que representa una posición en el eje y del lienzo y se usa en un triangle() que forma al barco.
+
+- **xRect**
+Es un int que representa una posición en el eje x del lienzo y se usa en un rect() que forma al barco.
+
+- **yRect**
+Es un int que representa una posición en el eje y del lienzo y se usa en un rect() que forma al barco.
+
+### Metodos:
+- **pintarVigilant()**
+Se encarga de hacer aparecer un objeto que representa al barco Vigilant.
+
+- **arrastrarVigilant()**
+Esta función se encarga de permitir al usuario arrastrar el objeto.
+
+- **soltarVigilant()**
+Esta función se encarga de permitir al usuario soltar el objeto.
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Clase Esferas
+Esta clase crea un objeto que representa unas esferas el cual el usuario podra arrastrarlas hacia una posición en
+el lienzo.
+
+### Variables:
+- **xCir**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma una roca.
+
+- **yCir**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma una roca.
+
+- **xEsf**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma una esfera.
+
+- **yEsf**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma una esfera.
+
+- **tam**
+Es un int que representa el tamaño del circulo que representara una roca.
+
+- **tamE**
+Es un int que representa el tamaño del circulo que representara una esfera.
+
+- **validarClick**
+Es un boolean que se usara en el metodo clickRocas().
+
+### Metodos:
+- **pintarEsferas()**
+Se encarga de hacer aparecer un objeto que representa a una esfera.
+
+- **pintarRocas()**
+Se encarga de hacer aparecer un objeto que representa a unas rocas.
+
+- **clickRocas()**
+Se encarga de validar cuando el usuario haga click sobre las rocas en el lienzo y pueda hacer aparecer las esferas.
+
+- **arrastarEsfera()**
+Permite al usuario arrastrar las esferas con el mouse.
+
+- **soltarEsfera()**
+Permite al usuario soltar las esferas en la posición que desee.
+
+- **rotarEsfera()**
+Hace que las esferas giren en torno a Cthulhu cuando son arrastradas a cierta posición.
