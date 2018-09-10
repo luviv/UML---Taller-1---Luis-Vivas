@@ -85,7 +85,7 @@ Se encarga de todos los eventos del teclado que tengan que ver con la acción de 
 ## Clase Estrellas
 Esta clase crea objetos que representan estrellas en el lienzo y aparecen en la parte superior del mismo.
 
-### Variables
+### Variables:
 - **x**
 Es un int que representa una posición en el eje x del lienzo.
 
@@ -95,7 +95,7 @@ Es un int que representa una posición en el eje y del lienzo.
 - **tam**
 Es un int que representa el tamaño del circulo que representara la estrella.
 
-### Metodos
+### Metodos:
 - **pintar()**
 Se encarga de hacer aparecer el objetos de tipo Estrellas en el lienzo.
 
@@ -105,7 +105,7 @@ Se encarga de hacer aparecer el objetos de tipo Estrellas en el lienzo.
 Esta clase crea un objeto que representa un rayo en el lienzo despues de que el usuario haya presionado el click
 durante 5 segundos.
 
-### Variables
+### Variables:
 - **x1**
 Es un int que representa una posición en el eje x del lienzo y se usa en uno de los quad() que forma el relampago.
 
@@ -124,7 +124,7 @@ Es un int que representa una posición en el eje x del lienzo y se usa en un tria
 - **yTri**
 Es un int que representa una posición en el eje y del lienzo y se usa en un triangle() que forma el relampago.
 
-### Metodos
+### Metodos:
 - **pintarRayo()**
 Se encarga de hacer aparecer el objeto de tipo Rayo en el lienzo.
 
@@ -133,7 +133,58 @@ Se encarga del evento del mouse en el que el usuario debera mantener presionado 
 
 -------------------------------------------------------------------------------------------------------------------
 
+## Clase Cthulhu
+Esta clase crea un objeto que representa a Cthulhu en el lienzo despues de que el usuario haya escrito su nombre
+usando el teclado.
 
+### Variables:
+-**xCir**
+Es un int que representa una posición en el eje x del lienzo y se usa en un ellipse() que forma a Cthulhu.
+
+-**yCir**
+Es un int que representa una posición en el eje y del lienzo y se usa en un ellipse() que forma a Cthulhu.
+
+- **tam**
+Es un int que representa el tamaño del circulo que será la cabeza de Cthulhu.
+
+-**xArc**
+Es un int que representa una posición en el eje x del lienzo y se usa en un arc() que forma a Cthulhu.
+
+-**yArc**
+Es un int que representa una posición en el eje y del lienzo y se usa en un arc() que forma a Cthulhu.
+
+-**cArc**
+Es un int que representa el ancho del arco y se usa en un arc() que forma a Cthulhu.
+
+-**dArc**
+Es un int que representa la altura del arco y se usa en un arc() que forma a Cthulhu.
+
+-**xRect**
+Es un int que representa una posición en el eje x del lienzo y se usa en un rect() que forma a Cthulhu.
+
+-**yRect**
+Es un int que representa una posición en el eje y del lienzo y se usa en un rect() que forma a Cthulhu.
+
+-**letras[]**
+Es un arreglo de char que contiene las letras que forman la palabra "Cthulhu".
+
+-**valTecla**
+Almacena un boolean que se usa en el metodo validarTecla(char).
+
+### Metodos:
+- **pintarCthulhu()**
+Se encarga de hacer aparecer el objeto de tipo Cthulhu en el lienzo.
+
+- **pintarFrase(char)**
+Recibe como parametros las letras usadas para escribir la palabra "Cthulhu" y las pinta en el lienzo.
+
+- **validarTecla(char)**
+Valida si se escribe las teclas correctas para escribir la palabra "Cthulhu"-
+
+- **getLetra(char)**
+Retorna el char presionado por el usuario para que el programa lo valide.
+
+-------------------------------------------------------------------------------------------------------------------
 
 
 
